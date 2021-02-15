@@ -36,12 +36,12 @@ app.use((req, res) => {
     res.status(404).send('<h2>Oops. Page Not Found</h2>')
 });
 
-// const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3001
 
-// app.listen(PORT, () => {
-//     console.log("Server listened on port", PORT);
-// });
+app.listen(PORT, () => {
+    console.log("Server listened on port", PORT);
+});
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-})
+// app.listen(process.env.PORT || PORT, () => {
+//     console.log(`Server running on port ${PORT}`);
+// })
